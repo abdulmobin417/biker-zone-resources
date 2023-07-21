@@ -213,11 +213,11 @@
       <!-- latest news section end -->
 
       <!-- review section start -->
-      <!-- <section class="mb-32 px-14">
+      <section class="mb-32 px-14">
         <h2 class="text-5xl font-semibold text-center mb-16">
           Happy <span class="text-[#E76F51]">Clients says</span>
         </h2>
-        <div class="flex justify-between">
+        <div class="flex justify-evenly gap-y-7 xl:justify-between flex-wrap">
           <div
             class="space-y-4 px-9 py-10 border border-[#DEDEDE] rounded-md flex flex-col items-center"
           >
@@ -480,21 +480,23 @@
             <p class="text-[#252B42] text-sm font-semibold">Banker</p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- review section end -->
 
       <!-- faq section start -->
-      <!-- <section class="mb-32 font-inter">
+      <section class="mb-32 font-inter">
         <h2 class="text-5xl font-semibold text-center mb-14">
           Frequently Asked <span class="text-[#E76F51]">Questions</span>
         </h2>
-        <div class="flex items-center justify-evenly gap-24">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-evenly gap-24"
+        >
           <img
-            class="w-[446px] h-[495px]"
+            class="w-[270px] h-[290px] lg:w-[446px] lg:h-[495px]"
             src="./images/others/faq.png"
             alt=""
           />
-          <div class="join join-vertical w-[560px] px-6 py-5 space-y-4">
+          <div class="join join-vertical lg:w-[560px] px-6 py-5 space-y-4">
             <div
               class="collapse collapse-arrow border border-base-300 rounded-md"
             >
@@ -570,20 +572,22 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- faq section end -->
     </main>
     <!-- main section end -->
 
     <!-- footer section start -->
-    <!-- <footer class="bg-[#0B0D17] w-full text-white font-manrope pb-7">
-      <div class="container mx-auto py-14 px-5 flex justify-between">
+    <footer class="bg-[#0B0D17] w-full text-white font-manrope pb-7">
+      <div
+        class="container mx-auto py-14 px-10 lg:px-5 flex justify-between flex-col md:flex-row relative md:static"
+      >
         <div class="space-y-3">
           <ul class="flex gap-6">
             <li><a href="#">Download Now</a></li>
             <li><a href="#">License</a></li>
           </ul>
-          <ul class="flex gap-6">
+          <ul class="flex gap-6 flex-wrap">
             <li><a href="#">About</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
@@ -591,15 +595,25 @@
             <li><a href="#">Helps</a></li>
             <li><a href="#">PrivacyPolicy</a></li>
           </ul>
-          <p class="text-sm pt-3">© 2020 bike. All rights reserved</p>
+          <p class="absolute bottom-0 md:static text-sm pt-3 pl-[25%] md:pl-0">
+            © 2020 bike. All rights reserved
+          </p>
         </div>
-        <div class="flex flex-col gap-y-4">
+        <div class="mt-14 md:mt-0 flex flex-col gap-y-4">
           <h3 class="text-lg font-medium">Get the App</h3>
-          <img class="w-[135px] h-[40px]" src="./images/others/ios.png" alt="">
-          <img class="w-[135px] h-[40px]" src="./images/others/android.png" alt="">
+          <img
+            class="w-[135px] h-[40px]"
+            src="./images/others/ios.png"
+            alt=""
+          />
+          <img
+            class="w-[135px] h-[40px]"
+            src="./images/others/android.png"
+            alt=""
+          />
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- footer section end -->
   </body>
 </html>
