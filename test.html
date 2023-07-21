@@ -32,30 +32,6 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
-
-    <!-- custom screen size -->
-    <script>
-      module.exports = {
-        content: ["./src/**/*.{html,js}"],
-        theme: {
-          extend: {},
-          screens: {
-            xs: "411px",
-            sm: "540px",
-            smd: "640px",
-            md: "768px",
-            lg: "1024px",
-            xl: "1280px",
-            "2xl": "1400px",
-            "3xl": "1920px",
-          },
-        },
-        plugins: [],
-        daisyui: {
-          themes: ["light", "dark", "cupcake"],
-        },
-      };
-    </script>
   </head>
   <body class="font-poppins">
     <!-- header section start -->
@@ -63,10 +39,10 @@
       class="bg-[url('./images/others/header-img.jpg')] w-full h-[1000px] bg-cover bg-center bg-no-repeat mb-32 text-white"
     >
       <div class="bg-gradient-to-r from-[#181818d1] to-[#18181800] h-full">
-        <div class="container mx-auto px-5 smd:px-0">
+        <div class="container mx-auto">
           <nav class="flex items-center justify-between py-12">
             <h2 class="text-4xl font-bold">Go Ride</h2>
-            <div class="hidden md:flex gap-12 items-center">
+            <div class="flex gap-12 items-center">
               <ul class="font-medium flex gap-9">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
@@ -79,36 +55,18 @@
                 Login
               </button>
             </div>
-            <div class="md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </div>
           </nav>
           <section class="flex items-center h-[600px]">
             <div class="space-y-12">
-              <h1
-                class="text-4xl sm:text-5xl sm:leading-[70px] md:text-6xl font-bold md:leading-[85px]"
-              >
-                Keep Your Ride Safe <br class="hidden sm:block" />
+              <h1 class="text-6xl font-bold leading-[85px]">
+                Keep Your Ride Safe <br />
                 At Every Time
               </h1>
               <p class="font-light leading-6">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                <br class="hidden sm:block" />
-                do amet sint. Velit officia consequat duis enim velit
-                mollit.Exercitation <br class="hidden sm:block" />
+                <br />
+                do amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation <br />
                 veniam consequat sunt nostrud amet.
               </p>
               <button
@@ -126,7 +84,7 @@
     <!-- main section start -->
     <main class="container mx-auto">
       <!-- feature section start -->
-      <!-- <section>
+      <section>
         <h2 class="text-5xl font-semibold text-center mb-16">
           Fetured Bikes In This Year
         </h2>
@@ -135,11 +93,11 @@
           <img src="./images/others/feature-bike.png" alt="" />
           <img src="./images/others/feature-bike.png" alt="" />
         </div>
-      </section> -->
+      </section>
       <!-- feature section end -->
 
       <!-- latest news section start -->
-      <!-- <section class="mb-32">
+      <section class="mb-32">
         <h2 class="text-5xl font-semibold text-center mb-16">Latest News</h2>
         <div class="flex justify-between">
           <div
@@ -203,11 +161,11 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- latest news section end -->
 
       <!-- review section start -->
-      <!-- <section class="mb-32 px-14">
+      <section class="mb-32 px-14">
         <h2 class="text-5xl font-semibold text-center mb-16">
           Happy <span class="text-[#E76F51]">Clients says</span>
         </h2>
@@ -474,11 +432,11 @@
             <p class="text-[#252B42] text-sm font-semibold">Banker</p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- review section end -->
 
       <!-- faq section start -->
-      <!-- <section class="mb-32 font-inter">
+      <section class="mb-32 font-inter">
         <h2 class="text-5xl font-semibold text-center mb-14">
           Frequently Asked <span class="text-[#E76F51]">Questions</span>
         </h2>
@@ -564,13 +522,13 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- faq section end -->
     </main>
     <!-- main section end -->
 
     <!-- footer section start -->
-    <!-- <footer class="bg-[#0B0D17] w-full text-white font-manrope pb-7">
+    <footer class="bg-[#0B0D17] w-full text-white font-manrope pb-7">
       <div class="container mx-auto py-14 px-5 flex justify-between">
         <div class="space-y-3">
           <ul class="flex gap-6">
@@ -589,11 +547,19 @@
         </div>
         <div class="flex flex-col gap-y-4">
           <h3 class="text-lg font-medium">Get the App</h3>
-          <img class="w-[135px] h-[40px]" src="./images/others/ios.png" alt="">
-          <img class="w-[135px] h-[40px]" src="./images/others/android.png" alt="">
+          <img
+            class="w-[135px] h-[40px]"
+            src="./images/others/ios.png"
+            alt=""
+          />
+          <img
+            class="w-[135px] h-[40px]"
+            src="./images/others/android.png"
+            alt=""
+          />
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- footer section end -->
   </body>
 </html>
