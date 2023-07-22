@@ -33,26 +33,14 @@
       }
     </style>
 
-    <!-- custom screen size -->
     <script>
-      module.exports = {
-        content: ["./src/**/*.{html,js}"],
+      tailwind.config = {
         theme: {
-          extend: {},
-          screens: {
-            xs: "411px",
-            sm: "540px",
-            smd: "640px",
-            md: "768px",
-            lg: "1024px",
-            xl: "1280px",
-            "2xl": "1400px",
-            "3xl": "1920px",
+          extend: {
+            screens: {
+              xs: "411px",
+            },
           },
-        },
-        plugins: [],
-        daisyui: {
-          themes: ["light", "dark", "cupcake"],
         },
       };
     </script>
@@ -157,7 +145,8 @@
                 Ducati XDIAVEL S-73
               </h3>
               <p class="text-[#6C6C6C] text-base font-normal leading-8">
-                Lorem ipsum dolor sit amet, consectetur <br />
+                Lorem ipsum dolor sit amet, consectetur
+                <br class="hidden xs:block" />
                 adipiscing elit. Lacus, fermentum amet <br />
                 faucibus sed id nisi lectus at.
               </p>
@@ -177,7 +166,8 @@
                 Motorcycles & Scooters
               </h3>
               <p class="text-[#6C6C6C] text-base font-normal leading-8">
-                Lorem ipsum dolor sit amet, consectetur <br />
+                Lorem ipsum dolor sit amet, consectetur
+                <br class="hidden xs:block" />
                 adipiscing elit. Lacus, fermentum amet <br />
                 faucibus sed id nisi lectus at.
               </p>
@@ -197,7 +187,8 @@
                 2021 Honda CBR500R
               </h3>
               <p class="text-[#6C6C6C] text-base font-normal leading-8">
-                Lorem ipsum dolor sit amet, consectetur <br />
+                Lorem ipsum dolor sit amet, consectetur
+                <br class="hidden xs:block" />
                 adipiscing elit. Lacus, fermentum amet <br />
                 faucibus sed id nisi lectus at.
               </p>
